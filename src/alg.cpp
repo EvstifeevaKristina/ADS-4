@@ -46,30 +46,29 @@ int countPairs3(int *arr, int len, int value) {
   return 0;
     SortAlgo(arr, len);
 int n = 0;
-		  for (int i = 0; i < len - 1; i++) {
-		    int left = i, right = len;
-		    while (left < right - 1) {
-		      int mid = (left + right) / 2;
-		      if (arr[i] + arr[mid] == value) {
-		        n++;
-		        int j = mid + 1;
-		        while (arr[i] + arr[j] == value && j < right) {
-		          n++;
-		          j++;
-		        }
-		        j = mid - 1;
-		        while (arr[i] + arr[j] == value && j > left) {
-		          n++;
-		          j--;
-		        }
-		        break;
-		      }
-		      if (arr[i] + arr[mid] > value)
-		        right = mid;
-		      else
-		        left = mid;
-		    }
-		  }
-		  return n;
+for (int i = 0; i < len - 1; i++) {
+	int left = i, right = len;
+	while (left < right - 1) {
+		int mid = (left + right) / 2;
+		if (arr[i] + arr[mid] == value) {
+			n++;
+			int j = mid + 1;
+			while (arr[i] + arr[j] == value && j < right) {
+				n++;
+				j++;
+			}
+			j = mid - 1;
+			while (arr[i] + arr[j] == value && j > left) {
+				n++;
+				j--;
+			}
+			break;
 		}
-
+		if (arr[i] + arr[mid] > value)
+			right = mid;
+		else
+			left = mid;
+	}
+}
+	return n;
+}
