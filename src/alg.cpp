@@ -1,7 +1,8 @@
 // Copyright 2021 NNTU-CS
 int countPairs1(int *arr, int len, int value) {
   return 0;
-  void SortAlgo(int* data, int lenD) {
+	
+void SortAlgo(int* data, int lenD) {
   int j = 0;
   int tmp = 0;
   for (int i = 0; i < lenD; i++) {
@@ -18,7 +19,8 @@ int countPairs1(int *arr, int len, int value) {
 }
 int countPairs2(int *arr, int len, int value) {
   return 0;
-  int countPairs1(int* arr, int len, int value) {
+  
+int countPairs1(int* arr, int len, int value) {
   SortAlgo(arr, len);
   int n = 0;
   for (int i = 0; i < len - 1; i++) {
