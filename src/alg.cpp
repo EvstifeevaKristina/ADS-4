@@ -1,5 +1,5 @@
 // Copyright 2021 NNTU-CS
-  
+
 void SortAlgo(int* data, int lenD) {
   int j = 0;
   int tmp = 0;
@@ -28,7 +28,7 @@ int countPairs1(int* arr, int len, int value) {
   }
   return n;
 }
- 
+
 int countPairs2(int* arr, int len, int value) {
   SortAlgo(arr, len);
   int n = 0;
