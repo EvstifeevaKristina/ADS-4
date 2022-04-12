@@ -38,7 +38,6 @@ int countPairs1(int* arr, int len, int value) {
   }
   return n;
 }
-
     SortAlgo(arr, len);
 int n = 0;
 for (int i = 0; i < len - 1; i++) {
