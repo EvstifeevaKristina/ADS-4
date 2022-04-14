@@ -43,7 +43,7 @@ int countPairs2(int* arr, int len, int value) {
 }
 
 int countPairs3(int *arr, int len, int value) {
-    SortAlgo(arr, len);
+SortAlgo(arr, len);
 int n = 0;
 for (int i = 0; i < len - 1; i++) {
   int left = i, right = len;
